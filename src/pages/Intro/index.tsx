@@ -1,5 +1,6 @@
+import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import imagem from '../../assets/Imagem.svg'
-import { InstroContainer } from './styled'
+import { ContainerItem, InstroContainer } from './styled'
 
 export default function Intro() {
   return (
@@ -12,12 +13,36 @@ export default function Intro() {
             hora
           </p>
         </aside>
-        <div>
-          <p>Compra simples e segura</p>
-          <p>Entrega rápida e rastreada</p>
-          <p>Embalagem mantém o café intacto</p>
-          <p>O café chega fresquinho até você</p>
-        </div>
+        <ContainerItem>
+          <p>
+          <ShoppingCart
+          style={{backgroundColor:"#C47F17"}}
+          size={32}
+          />
+          Compra simples e segura</p>
+
+          <p>
+          <Package
+          style={{backgroundColor:"#403937"}}
+          size={32}
+          />
+          Embalagem mantém o café intacto</p>
+
+          <p>
+          <Timer
+          style={{backgroundColor:"#DBAC2C"}} 
+          size={32}
+          />
+          Entrega rápida e rastreada</p>
+          
+          <p>
+          <Coffee
+          style={{backgroundColor:"#8047F8"}} 
+          size={32}
+          />
+          O café chega fresquinho até você</p>
+
+        </ContainerItem>
       </section>
       <img src={imagem} alt="" />
     </InstroContainer>
