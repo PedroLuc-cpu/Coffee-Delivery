@@ -12,6 +12,7 @@ export const InstroContainer = styled.main`
     color: ${(props) => props.theme['base-title']};
   }
   section {
+    
     aside {
       max-width: 36.75rem;
     h1{
