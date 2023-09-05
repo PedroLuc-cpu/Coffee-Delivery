@@ -4,9 +4,9 @@ import styled from 'styled-components'
 export const ContainerCoffeeList = styled.section`
 display: grid;
 grid-template-columns: repeat(4,256px);
-gap: 1rem;
+gap: 40px 1rem;
 justify-content: center;
-
+margin-bottom: 10rem;
 
 `
 

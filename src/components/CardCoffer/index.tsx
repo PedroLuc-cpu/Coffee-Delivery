@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import { CoffeeCard, Buy } from './styled'
+import { CoffeeCard, Buy, Tag } from './styled'
 import { Minus, Plus, ShoppingCart } from '@phosphor-icons/react'
 
+export interface Itags {
+  tag1?: string
+  tag2?: string
+  tag3?: string
+}
 export interface ICofferLists {
   id: number
   Coffee: string
-  Tags: string
+  Tags: Itags
   Name: string
   Description: string
-  price: number
+  price: string
 }
 
 export function CardCoffer({
@@ -23,8 +28,16 @@ export function CardCoffer({
 
   return (
     <CoffeeCard key={id}>
-      <img src={Coffee} alt={Coffee} />
-      <span>{Tags}</span>
+      <img
+        src={Coffee}
+        alt={Coffee}
+        style={{ position: 'relative', top: '-25px' }}
+      />
+      <Tag>
+        <span>{Tags.tag1}</span>
+        <span>{Tags.tag2}</span>
+        <span>{Tags.tag3}</span>
+      </Tag>
       <strong>{Name}</strong>
       <p>{Description}</p>
       <Buy>

@@ -14,16 +14,9 @@ border-top-right-radius: 3rem;
 p{
  text-align: center;
 }
-
-span{
- background-color: #F1E9C9;
- color:  #C47F17;
- padding: .2rem .5rem .2rem .5rem;
- border-radius: 1rem;
- font-size: 12px;
- font-weight: bold;
+strong{
+ padding: .5rem 0;
 }
-
 `
 
 export const Buy = styled.footer`
@@ -45,17 +38,28 @@ strong{
 
 div{
  background-color: #E6E5E5;
+ border-radius: 5px;
  padding: .2rem;
  display: flex;
  align-items: center;
  gap: .5rem;
  
 }
-
  button{
  border: none;
  cursor: pointer;
  background-color: transparent;
 }
+`
 
+export const Tag = styled.span`
+span{
+ margin: .2rem;
+ background-color: #F1E9C9;
+ color:  #C47F17;
+ padding: .2rem .5rem .2rem .5rem;
+ border-radius: 1rem;
+ font-size: 12px;
+ font-weight: bold;
+}
 `

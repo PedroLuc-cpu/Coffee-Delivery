@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Header from './components/Header/Header.tsx'
+import { CheckoutFilled } from './pages/CheckoutFilled/index.tsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    children: [{ path: '/', element: <Header /> }],
+    children: [{ path: '/CheckoutFilled', element: <CheckoutFilled /> }],
   },
 ])
 

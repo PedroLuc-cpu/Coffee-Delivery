@@ -1,5 +1,5 @@
 import logo from '../../assets/Logo.svg'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { MapPin, ShoppingCartSimple } from '@phosphor-icons/react'
 import { HeaderContainer } from './styled'
 
@@ -12,9 +12,9 @@ export default function Header() {
           <MapPin size={32} weight="fill" color="#8047F8" />
           Porto Alegre, RS
         </NavLink>
-        <NavLink to={'ShoppingCart'}>
+        <Link to={'/CheckoutFilled'}>
           <ShoppingCartSimple size={32} weight="fill" color="#C47F17" />
-        </NavLink>
+        </Link>
       </nav>
     </HeaderContainer>
   )
