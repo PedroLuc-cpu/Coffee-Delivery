@@ -8,7 +8,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    children: [{ path: '/CheckoutFilled', element: <CheckoutFilled /> }],
+  },
+  {
+    path: 'CheckoutFilled',
+    element: <CheckoutFilled />,
   },
 ])
 

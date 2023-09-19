@@ -13,9 +13,11 @@
     "@phosphor-icons/react": "^2.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.1",
     "react-router": "^6.11.1",
     "react-router-dom": "^6.11.1",
-    "styled-components": "^5.3.10"
+    "styled-components": "^5.3.10",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",

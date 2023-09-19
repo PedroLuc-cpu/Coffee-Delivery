@@ -24,7 +24,12 @@ export function CardCoffer({
   Description,
   price,
 }: ICofferLists) {
-  const [ActionsCounter, SetActionsCounter] = useState(1)
+  const [ActionsCounter, SetActionsCounter] = useState(0)
+
+  const handleClick = () => {
+    // apagar depois
+    SetActionsCounter((prev) => prev + 1)
+  }
 
   return (
     <CoffeeCard key={id}>
@@ -47,7 +52,7 @@ export function CardCoffer({
             <Minus size={24} color="#8047F8" />
           </button>
           <strong>{ActionsCounter}</strong>
-          <button onClick={() => SetActionsCounter(ActionsCounter + 1)}>
+          <button onClick={handleClick}>
             <Plus size={24} color="#8047F8" />
           </button>
         </div>
