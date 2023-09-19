@@ -8,12 +8,19 @@ import {
   Payment,
 } from './styled'
 
+import {useContext} from "react"
+import { CheckoutFilledContext } from '../../context/CardCofferContext'
+
+
 export function CheckoutFilled() {
+  const {ActionsCounter} = useContext(CheckoutFilledContext)
+
   return (
     <div>
-      <LayoutContainer>
+    <LayoutContainer>
         <Checkout>
           <Address>
+            <p>{ActionsCounter}</p>
             <input type="number" name="" id="" />
             <input type="text" name="" id="" />
             <input type="number" name="" id="" />
@@ -36,7 +43,8 @@ export function CheckoutFilled() {
             </div>
           </Payment>
         </Checkout>
-        <CoffeeCard>448</CoffeeCard>
+        <CoffeeCard>
+        </CoffeeCard>
       </LayoutContainer>
     </div>
   )

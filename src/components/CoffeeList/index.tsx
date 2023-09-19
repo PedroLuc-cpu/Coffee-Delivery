@@ -15,7 +15,7 @@ import c12 from '../../assets/coffer/Macchiato.svg'
 import c13 from '../../assets/coffer/Mochaccino.svg'
 import c14 from '../../assets/coffer/Árabe.svg'
 
-const coffer1: ICofferLists[] = [
+export const coffer1: ICofferLists[] = [
   {
     id: 1,
     Coffee: c1,

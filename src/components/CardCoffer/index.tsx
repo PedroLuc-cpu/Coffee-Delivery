@@ -1,4 +1,7 @@
-import { useState } from 'react'
+import { useContext } from 'react'
+
+import { CheckoutFilledContext } from '../../context/CardCofferContext'
+
 import { CoffeeCard, Buy, Tag } from './styled'
 import { Minus, Plus, ShoppingCart } from '@phosphor-icons/react'
 
@@ -24,14 +27,11 @@ export function CardCoffer({
   Description,
   price,
 }: ICofferLists) {
-  const [ActionsCounter, SetActionsCounter] = useState(0)
 
-  const handleClick = () => {
-    // apagar depois
-    SetActionsCounter((prev) => prev + 1)
-  }
+  const {ActionsCounter, handleClick} = useContext(CheckoutFilledContext)
 
   return (
+    
     <CoffeeCard key={id}>
       <img
         src={Coffee}

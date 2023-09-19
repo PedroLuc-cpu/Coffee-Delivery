@@ -6,9 +6,11 @@ import { HeaderContainer } from './styled'
 export default function Header() {
   return (
     <HeaderContainer>
+      <Link to={'/'}>
       <img src={logo} alt="" />
+      </Link>
       <nav>
-        <NavLink to={'/'}>
+        <NavLink to={'/CheckoutFilled'}>
           <MapPin size={32} weight="fill" color="#8047F8" />
           Porto Alegre, RS
         </NavLink>
